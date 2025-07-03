@@ -19,7 +19,7 @@ viral_libraries:
 neut_standard_sets:
   loes2023: data/neut_standard_sets/loes2023_neut_standards.csv
 
-viral_strain_plot_order: data/250212_StrainsMatchBalticOrder.csv
+viral_strain_plot_order: data/H1N1library_2023-2024_allStrains.csv
 
 illumina_barcode_parser_params:
   upstream: CCTACAATGTCGGATTTGTATTTAATAG
