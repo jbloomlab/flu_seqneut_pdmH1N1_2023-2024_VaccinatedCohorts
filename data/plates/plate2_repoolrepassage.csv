@@ -1,0 +1,17 @@
+,well,serum,dilution_factor,replicate,fastq
+0,A1,none,3,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc1_rep1_S1_R1_001.fastq.gz
+1,A2,none,3,2,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc1_rep2_S9_R1_001.fastq.gz
+2,B1,none,9,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc2_rep1_S2_R1_001.fastq.gz
+3,B2,none,9,2,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc2_rep2_S10_R1_001.fastq.gz
+4,C1,none,27,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc3_rep1_S3_R1_001.fastq.gz
+5,C2,none,27,2,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc3_rep2_S11_R1_001.fastq.gz
+6,D1,none,81,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc4_rep1_S4_R1_001.fastq.gz
+7,D2,none,81,2,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc4_rep2_S12_R1_001.fastq.gz
+8,E1,none,243,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc5_rep1_S5_R1_001.fastq.gz
+9,E2,none,243,2,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc5_rep2_S13_R1_001.fastq.gz
+10,F1,none,729,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc6_rep1_S6_R1_001.fastq.gz
+11,F2,none,729,2,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc6_rep2_S14_R1_001.fastq.gz
+12,G1,none,2187,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc7_rep1_S7_R1_001.fastq.gz
+13,G2,none,2187,2,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc7_rep2_S15_R1_001.fastq.gz
+14,H1,none,6561,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc8_rep1_S8_R1_001.fastq.gz
+15,H2,none,6561,2,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240123_VH00699_427_AAFC7FHM5/Unaligned/Project_aloes/pdmH1N1library_conc8_rep2_S16_R1_001.fastq.gz
