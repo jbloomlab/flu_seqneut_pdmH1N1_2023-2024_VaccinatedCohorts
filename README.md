@@ -13,7 +13,7 @@ For in depth description of sequencing-based neutralization assay which was used
 * This library was then assayed against sera from the Penn Vaccine Cohort, conducted at the University of Pennsylvania:
     * Samples collected day 0 and day 30 post vaccination with the egg-based 2023-2024 seasonal influenza virus vaccine. The H1N1 vaccine component that season was A/Victoria/4897/2022.
     * Serum neutralizing titers measured from the University of Pennsylvania cohort are placed in [./results/aggregated_titers/titers_PennVaccineCohort.csv](results/aggregated_titers/titers_PennVaccineCohort.csv).
-    * Serum neutralizing titers measured from the DRIVE Repeated Vaccination cohort are placed in [./results/aggregated_titers/titers_PennVaccineCohort.csv](results/aggregated_titers/titers_DRIVE.csv).
+    * Serum neutralizing titers measured from the DRIVE Repeated Vaccination cohort are placed in [./results/aggregated_titers/titers_DRIVE.csv](results/aggregated_titers/titers_DRIVE.csv).
 
 ## Description of input data
 The input data are in [./data/](data), and include:
