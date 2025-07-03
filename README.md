@@ -7,12 +7,13 @@ For in depth description of sequencing-based neutralization assay which was used
 
 ## Quick summary
 * The list of strains included in the library are listed in CSV format in [./data/H1N1library_2023-2024_allStrains.csv](./data/H1N1library_2023-2024_allStrains.csv), and the process of library design is described in [librarydesign/README.md](librarydesign/README.md). This panel of 58 circulating H1N1 viruses was selected in the late fall of 2023, including frequently observed and recently observed haplotypes from the Nextstrain tree build from 11-22-2023.
-    * The full length protein sequences of the HAs from the 58 recent strains as they are represented in the library are available in: [./librarydesign/2023-2024_H1_library_full-length_proteins_chimeric.fasta](./librarydesign/2023-2024_H1_library_full-length_proteins_chimeric.fasta). These are the chimeric HA protein sequences containing the first 20 and last 46 amino acids from A/WSN/1933 (H1N1) and the ectodomain from the recent HA strain of interest.
-    * The protein sequences for the ectodomains of the HAs of the recent strains included in the library are available in: [./librarydesign/2023-2024_H1_library_protein_HA_ectodomains.fasta](./librarydesign/2023-2024_H1_library_protein_HA_ectodomains.fasta). This file shows the region of the protein sequence for each HA ectodomain which matches the HA protein sequence from the originating strain, as trimmed to be incorporated into the barcoded HA segment. The starting amino acid is HA1 position 4.
-    * The HA1 sequences are available in [./librarydesign/2023-2024_H1_library_protein_HA1.fasta](./librarydesign/2023-2024_H1_library_protein_HA1.fasta). Note that HA1 position 3 is fixed to the WSN amino-acid at this site (isoleucine) rather than the leucine observed in recent circulating sequences in the final library. This was done to maintain the entire WSN packaging signal. Therefore, in this file the HA1s start at position 4.
+    * The full length protein sequences of the HAs from the 58 recent strains as they are represented in the library are available in: [./librarydesign/2023-2024_H1_library_full-length_proteins_chimeric.fasta](./librarydesign/2023-2024_H1_library_full-length_proteins_chimeric_withvaccinestrains.fasta). These are the chimeric HA protein sequences containing the first 20 and last 46 amino acids from A/WSN/1933 (H1N1) and the ectodomain from the recent HA strain of interest.
+    * The protein sequences for the ectodomains of the HAs of the recent strains included in the library are available in: [./librarydesign/2023-2024_H1_library_protein_HA_ectodomains.fasta](./librarydesign/2023-2024_H1_library_protein_HA_ectodomains_withvaccinestrains.fasta). This file shows the region of the protein sequence for each HA ectodomain which matches the HA protein sequence from the originating strain, as trimmed to be incorporated into the barcoded HA segment. The starting amino acid is HA1 position 4.
+    * The HA1 sequences are available in [./librarydesign/2023-2024_H1_library_protein_HA1.fasta](./librarydesign/2023-2024_H1_library_protein_HA1_withvaccinestrains.fasta). Note that HA1 position 3 is fixed to the WSN amino-acid at this site (isoleucine) rather than the leucine observed in recent circulating sequences in the final library. This was done to maintain the entire WSN packaging signal. Therefore, in this file the HA1s start at position 4.
 * This library was then assayed against sera from the Penn Vaccine Cohort, conducted at the University of Pennsylvania:
     * Samples collected day 0 and day 30 post vaccination with the egg-based 2023-2024 seasonal influenza virus vaccine. The H1N1 vaccine component that season was A/Victoria/4897/2022.
     * Serum neutralizing titers measured from the University of Pennsylvania cohort are placed in [./results/aggregated_titers/titers_PennVaccineCohort.csv](results/aggregated_titers/titers_PennVaccineCohort.csv).
+    * Serum neutralizing titers measured from the DRIVE Repeated Vaccination cohort are placed in [./results/aggregated_titers/titers_PennVaccineCohort.csv](results/aggregated_titers/titers_DRIVE.csv).
 
 ## Description of input data
 The input data are in [./data/](data), and include:
@@ -22,9 +23,6 @@ The input data are in [./data/](data), and include:
 
 ## Library background and design
 Information on the library design is placed in [./librarydesign/](librarydesign).
-
-## Library pooling and quality checks
-Analysis of library strain balancing and calculations for re-pooling library are placed in [./librarypooling/](librarypooling). These are currently manually run notebooks on barcode counts processed from `miscellaneous_plates`.
 
 ## Running the pipeline
 This repository contains an analysis of the data using [seqneut-pipeline](https://github.com/jbloomlab/seqneut-pipeline).
@@ -37,5 +35,3 @@ To run the pipeline, build the `seqneut-pipeline` conda environment in [seqneut-
 Then run the pipeline using:
 
     snakemake -j <n_jobs> --software-deployment-method conda
-
-To run on the Hutch cluster, you can use the Bash scripts [run_Hutch_cluster.bash](run_Hutch_cluster.bash).
