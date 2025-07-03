@@ -1,0 +1,44 @@
+wells: {}
+barcodes:
+  CCAGGAACAATATATC: min_neut_standard_frac_per_well
+  CCCACCCCTGCCTCCC: min_neut_standard_frac_per_well
+  GAGCAGTATCTGGTTA: min_neut_standard_frac_per_well
+  TTGAAAGCCACAACAC: min_neut_standard_frac_per_well
+barcode_wells:
+  AGCCCGAAGAGCCCCT H3: max_frac_infectivity_per_viral_barcode_well
+  GACAATATACCCCCAT B5: max_frac_infectivity_per_viral_barcode_well
+  TTCTATAGTACTTCTA B5: max_frac_infectivity_per_viral_barcode_well
+  AAGATTACCAAATTAT B5: max_frac_infectivity_per_viral_barcode_well
+  TGAAGCCATGAGTATC B5: max_frac_infectivity_per_viral_barcode_well
+  TCCGAAAGACCAAAAC B5: max_frac_infectivity_per_viral_barcode_well
+  GAATATAAATGGGCAT B5: max_frac_infectivity_per_viral_barcode_well
+  CGAAAGAACCTACCCG A5: max_frac_infectivity_per_viral_barcode_well
+  TGTGATAGACCTAGAA A5: max_frac_infectivity_per_viral_barcode_well
+  AATAAAATGCATGGGT A5: max_frac_infectivity_per_viral_barcode_well
+  AGTCAGGAGTCATATA A5: max_frac_infectivity_per_viral_barcode_well
+  TATGGCCTATAGGTTC A5: max_frac_infectivity_per_viral_barcode_well
+  CGTTAAGTTGAAAAAA A5: max_frac_infectivity_per_viral_barcode_well
+  GCAGAACATAAAACTC H6: max_frac_infectivity_per_viral_barcode_well
+  AATCCGAAATTTATTC F6: max_frac_infectivity_per_viral_barcode_well
+  AGCCCGAAGAGCCCCT C6: max_frac_infectivity_per_viral_barcode_well
+  GAATATAAATGGGCAT B6: max_frac_infectivity_per_viral_barcode_well
+  ACGGCAAGTGATGAAA A6: max_frac_infectivity_per_viral_barcode_well
+  ACGCCCCCACTTCATG G7: max_frac_infectivity_per_viral_barcode_well
+  CCACATAGGCGTTTTT E7: max_frac_infectivity_per_viral_barcode_well
+  AGCCCGAAGAGCCCCT D7: max_frac_infectivity_per_viral_barcode_well
+  GAATATAAATGGGCAT C7: max_frac_infectivity_per_viral_barcode_well
+  AATCCGAAATTTATTC E8: max_frac_infectivity_per_viral_barcode_well
+  AATCCGAAATTTATTC D9: max_frac_infectivity_per_viral_barcode_well
+  AGCCCGAAGAGCCCCT A11: max_frac_infectivity_per_viral_barcode_well
+barcode_serum_replicates:
+  AGTACTTCGTACTCCT PENN23_y1966_s057_d0: goodness_of_fit
+  CAAAAACTTTAATTTC PENN23_y1988_s031_d0: goodness_of_fit
+  CGATGCACTCGTAAGT PENN23_y1988_s031_d0: goodness_of_fit
+  GCATCCTTTTCCTGTT PENN23_y1988_s031_d0: goodness_of_fit
+  GGATTACACGATACCG PENN23_y1988_s031_d0: goodness_of_fit
+  TGAATGATTCTCCTTT PENN23_y1988_s031_d0: goodness_of_fit
+  AATCCGAAATTTATTC PENN23_y1997_s019_d0: goodness_of_fit
+  AATTGTGAATGCCACA PENN23_y1997_s019_d0: goodness_of_fit
+  CCAAATTTTAACTGTG PENN23_y1997_s019_d0: goodness_of_fit
+  CTGAACTTGTCGATAT PENN23_y1997_s019_d0: goodness_of_fit
+serum_replicates: {}
