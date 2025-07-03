@@ -1,0 +1,15 @@
+wells: {}
+barcodes:
+  AAAATCATTCGACTCT: min_neut_standard_frac_per_well
+  AATCCGAAATTTATTC: min_neut_standard_frac_per_well
+  CCAGGAACAATATATC: min_neut_standard_frac_per_well
+  CCCACCCCTGCCTCCC: min_neut_standard_frac_per_well
+  GAGCAGTATCTGGTTA: min_neut_standard_frac_per_well
+  TTGAAAGCCACAACAC: min_neut_standard_frac_per_well
+barcode_wells:
+  GCATCCTTTTCCTGTT B6: max_frac_infectivity_per_viral_barcode_well
+  AGTACTTCGTACTCCT A7: max_frac_infectivity_per_viral_barcode_well
+  GCATCCTTTTCCTGTT F7: max_frac_infectivity_per_viral_barcode_well
+barcode_serum_replicates:
+  AGCCCGAAGAGCCCCT DRIVE_y1987_s003_d0: goodness_of_fit
+serum_replicates: {}

@@ -1,0 +1,546 @@
+# === Analysis configuration file =============================================0;136;0c=========
+
+
+# --- Configuration for `seqneut-pipeline` ---------------------------------------------
+
+seqneut-pipeline: seqneut-pipeline
+
+docs: docs
+
+description: |
+  # Sequencing-based neutralization assays of 2023-2024 Penn Vaccine samples versus H1N1 influenza libraries
+  Study by Loes, Tarabi, et al of samples from the Penn Vaccine cohort using sequencing-based neutralization assay developed in the Bloom lab.
+
+  The numerical data and computer code are at [https://github.com/jbloomlab/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts](https://github.com/jbloomlab/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts)
+
+viral_libraries:
+  pdmH1N1Lib2023: data/viral_libraries/H1N1_2023_library.csv
+
+neut_standard_sets:
+  loes2023: data/neut_standard_sets/loes2023_neut_standards.csv
+
+viral_strain_plot_order: data/250212_StrainsMatchBalticOrder.csv
+
+illumina_barcode_parser_params:
+  upstream: CCTACAATGTCGGATTTGTATTTAATAG
+  downstream: ''
+  minq: 20
+  upstream_mismatch: 4
+  bc_orientation: R2
+
+default_process_plate_qc_thresholds: &default_process_plate_qc_thresholds
+  avg_barcode_counts_per_well: 500
+  min_neut_standard_frac_per_well: 0.005
+  no_serum_per_viral_barcode_filters:
+    min_frac: 0.00004
+    max_fold_change: 4
+    max_wells: 2
+  per_neut_standard_barcode_filters:
+    min_frac: 0.0002
+    max_fold_change: 4
+    max_wells: 2
+  min_neut_standard_count_per_well: 500
+  min_no_serum_count_per_viral_barcode_well: 50
+  max_frac_infectivity_per_viral_barcode_well: 4
+  min_dilutions_per_barcode_serum_replicate: 5
+
+default_process_plate_curvefit_params: &default_process_plate_curvefit_params
+  frac_infectivity_ceiling: 1
+  fixtop: [0.6,1]
+  fixbottom: 0
+  fixslope: [0.8, 10]
+
+default_process_plate_curvefit_qc:  &default_process_plate_curvefit_qc
+  max_frac_infectivity_at_least: 0
+  goodness_of_fit:
+    min_R2: 0.7
+    max_RMSD: 0.2
+  serum_replicates_ignore_curvefit_qc: []
+  barcode_serum_replicates_ignore_curvefit_qc: []
+
+plates:
+
+  plate1:
+    group: PennVaccineCohort
+    date: 2024-06-12
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate5_RT_Penn2.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+      goodness_of_fit:
+        min_R2: 0.7
+        max_RMSD: 0.25
+    illumina_barcode_parser_params:
+      upstream2: TGACGC
+      upstream2_mismatch: 1
+
+#  plate2: This plate has been removed from analysis due to significant noise in the data
+#    group: HensleySamples
+#    date: 2024-06-20
+##    viral_library: pdmH1N1Lib2023
+#    neut_standard_set: loes2023
+#    samples_csv: data/plates/plate6_RT_Penn3.csv
+#    manual_drops: {}
+#    qc_thresholds:
+##      <<: *default_process_plate_qc_thresholds
+#    curvefit_params:
+#      <<: *default_process_plate_curvefit_params
+#    curvefit_qc:
+#      <<: *default_process_plate_curvefit_qc
+#      goodness_of_fit:
+#        min_R2: 0.5
+#        max_RMSD: 0.25
+#    illumina_barcode_parser_params:
+#      upstream2: GCTACA
+#      upstream2_mismatch: 1
+
+  plate3:
+    group: PennVaccineCohort
+    date: 2024-06-20
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate7_RT_Penn4.csv
+    manual_drops:
+      serum_replicates:
+        - PENN23_y1985_s015_d0 #missing d28 sample highest concentration serum individual should be repeated
+        - PENN23_y1985_s015_d28 #missing d28 sample highest concentration serum individual should be repeated
+    qc_thresholds:
+      avg_barcode_counts_per_well: 400
+      min_neut_standard_frac_per_well: 0.005
+      no_serum_per_viral_barcode_filters:
+        min_frac: 0.00004
+        max_fold_change: 4
+        max_wells: 2
+      per_neut_standard_barcode_filters:
+        min_frac: 0.0002
+        max_fold_change: 4
+        max_wells: 2
+      min_neut_standard_count_per_well: 500
+      min_no_serum_count_per_viral_barcode_well: 50
+      max_frac_infectivity_per_viral_barcode_well: 4
+      min_dilutions_per_barcode_serum_replicate: 5
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: ATCGAT
+      upstream2_mismatch: 1
+
+  plate4:
+    group: PennVaccineCohort
+    date: 2024-06-20
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate8_RT_Penn5.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: TGACGC
+      upstream2_mismatch: 1
+
+  plate5:
+    group: PennVaccineCohort
+    date: 2024-06-20
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate9_RT_Penn7.csv
+    manual_drops:
+      serum_replicates:
+        - PENN23_y1964_s006_d0 #error in second dilution point for day 28 sample results in titer estimated from curve with missing point, inaccurate, needs to be repeated
+        - PENN23_y1964_s006_d28 #error in second dilution point for day 28 sample results in titer estimated from curve with missing point, inaccurate, needs to be repeated
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+      goodness_of_fit:
+        min_R2: 0.7
+        max_RMSD: 0.25
+    illumina_barcode_parser_params:
+      upstream2: GCTACA
+      upstream2_mismatch: 1
+
+  plate6:
+    group: PennVaccineCohort
+    date: 2024-06-20
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate10_RT_Penn8.csv
+    manual_drops:
+      serum_replicates:
+        - PENN23_y1964_s038_d0 #noisy data from d0 fails curve fitting, individual should be repeated
+        - PENN23_y1964_s038_d28 #noisy data from d0 fails curve fitting, individual should be repeated
+      wells: #last well appears to be low fraction infectivity for all samples suggesting issue with spike in control for whole column
+        - A12
+        - B12
+        - C12
+        - D12
+        - E12
+        - F12
+        - G12
+        - H12
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: ATCGAT
+      upstream2_mismatch: 1
+
+  plate7:
+    group: PennVaccineCohort
+    date: 2024-07-04
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate11_RT_Penn9.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: GCTACA
+      upstream2_mismatch: 1
+
+  plate8:
+    group: PennVaccineCohort
+    date: 2024-07-04
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate12_RT_Penn10.csv
+    manual_drops:
+      wells:
+        - B10 #fraction infectivity is unusually low for all curves, suggesting issue with loading of spike-in control to well
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+      goodness_of_fit:
+        min_R2: 0.7
+        max_RMSD: 0.25
+    illumina_barcode_parser_params:
+      upstream2: ATCGAT
+      upstream2_mismatch: 1
+
+  plate9:
+    group: PennVaccineCohort
+    date: 2024-07-04
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate13_RT_Penn11.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: TGACGC
+      upstream2_mismatch: 1
+
+  plate10:
+    group: PennVaccineCohort
+    date: 2024-07-04
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate14_RT_Penn1n2.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: CAGTTG
+      upstream2_mismatch: 1
+
+  plate11:
+    group: PennVaccineCohort
+    date: 2024-09-20
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate15_PennRep1.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: GCTACA
+      upstream2_mismatch: 1
+
+  plate12:
+    group: CellVaccineCohort
+    date: 2024-09-20
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate16_Cell.csv
+    manual_drops:
+      barcodes: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: ATCGAT
+      upstream2_mismatch: 1
+
+  plate13:
+    group: CellVaccineCohort
+    date: 2024-09-25
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate17_Cell.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: TGACGC
+      upstream2_mismatch: 1
+
+  plate14:
+    group: DRIVE
+    date: 2024-12-23
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate20_DRIVE_plateA.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: GCTACA
+      upstream2_mismatch: 1
+
+  plate15:
+    group: DRIVE
+    date: 2024-12-23
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate20_DRIVE_plateB.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: ATCGAT
+      upstream2_mismatch: 1
+
+  plate16:
+    group: DRIVE
+    date: 2024-12-23
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate20_DRIVE_plateC.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: TGACGC
+      upstream2_mismatch: 1
+
+  plate17:
+    group: DRIVE
+    date: 2024-12-23
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate20_DRIVE_plateD.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: CAGTTG
+      upstream2_mismatch: 1
+
+  plate18:
+    group: DRIVE
+    date: 2024-01-29
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate24_DRIVE_plateE.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: GCTACA
+      upstream2_mismatch: 1
+
+  plate19:
+    group: DRIVE
+    date: 2024-01-29
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate25_DRIVE_plateF.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: ATCGAT
+      upstream2_mismatch: 1
+
+  plate20:
+    group: DRIVE
+    date: 2024-01-29
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate26_DRIVE_plateG.csv
+    manual_drops:
+      barcodes:
+        - AATCCGAAATTTATTC
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: TGACGC
+      upstream2_mismatch: 1
+
+  plate21:
+    group: DRIVE
+    date: 2024-01-27
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate27_DRIVE_plateH.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: CAGTTG
+      upstream2_mismatch: 1
+
+  plate22:
+    group: DRIVE
+    date: 2024-03-20
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate28_DRIVE_plateI.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: TGACGC
+      upstream2_mismatch: 1
+
+  plate23:
+    group: PennVaccineCohort
+    date: 2024-03-20
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate29_Penn_plateI.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: TGACGC
+      upstream2_mismatch: 1
+
+  plate24:
+    group: DRIVE
+    date: 2024-03-20
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate30_DRIVE_plateJ.csv
+    manual_drops: {}
+    qc_thresholds:
+      <<: *default_process_plate_qc_thresholds
+    curvefit_params:
+      <<: *default_process_plate_curvefit_params
+    curvefit_qc:
+      <<: *default_process_plate_curvefit_qc
+    illumina_barcode_parser_params:
+      upstream2: CAGTTG
+      upstream2_mismatch: 1
+
+miscellaneous_plates:
+
+  plate1_initialpool:
+    date: 2024-01-19
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate1_initialpool.csv
+
+  plate2_repool:
+    date: 2024-01-26
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate2_repoolrepassage.csv
+
+  plate3_MOITest:
+    date: 2024-02-29
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate3_MOItest.csv
+
+default_serum_titer_as: midpoint
+
+default_serum_qc_thresholds: &default_serum_qc_thresholds
+  min_replicates: 1
+  max_fold_change_from_median: 10
+  viruses_ignore_qc: {}
+
+sera_override_defaults: {}

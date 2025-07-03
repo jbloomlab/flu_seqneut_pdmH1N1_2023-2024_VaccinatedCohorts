@@ -1,0 +1,28 @@
+wells:
+  C2: avg_barcode_counts_per_well
+barcodes:
+  CCAGGAACAATATATC: min_neut_standard_frac_per_well
+  CCCACCCCTGCCTCCC: min_neut_standard_frac_per_well
+  GAGCAGTATCTGGTTA: min_neut_standard_frac_per_well
+  TTGAAAGCCACAACAC: min_neut_standard_frac_per_well
+barcode_wells:
+  GAATATAAATGGGCAT D5: max_frac_infectivity_per_viral_barcode_well
+  GAATATAAATGGGCAT A5: max_frac_infectivity_per_viral_barcode_well
+  ATACGTATTGATATCT C6: max_frac_infectivity_per_viral_barcode_well
+  GAATATAAATGGGCAT C6: max_frac_infectivity_per_viral_barcode_well
+  CCACATAGGCGTTTTT C7: max_frac_infectivity_per_viral_barcode_well
+  AGTACTTCGTACTCCT C11: max_frac_infectivity_per_viral_barcode_well
+  GAATATAAATGGGCAT C11: max_frac_infectivity_per_viral_barcode_well
+barcode_serum_replicates:
+  CCCGACAAAGCCCTCG PENN23_y1960_s003_d0: goodness_of_fit
+  TGGCCTGCTTCGGAAA PENN23_y1960_s003_d28: goodness_of_fit
+  AGCCCGAAGAGCCCCT PENN23_y1976_s028_d0: goodness_of_fit
+  GAATATAAATGGGCAT PENN23_y1976_s028_d0: goodness_of_fit
+  CCACATAGGCGTTTTT PENN23_y1976_s028_d28: goodness_of_fit
+  CCCGACAAAGCCCTCG PENN23_y1976_s028_d28: goodness_of_fit
+  ACCCCTTCAGAAGTTA PENN23_y2000_s050_d0: goodness_of_fit
+  AGCCCGAAGAGCCCCT PENN23_y2000_s050_d0: goodness_of_fit
+  AGTACTTCGTACTCCT PENN23_y2000_s050_d0: goodness_of_fit
+  CCACATAGGCGTTTTT PENN23_y2000_s050_d0: goodness_of_fit
+  CCAGCCACATAAAATT PENN23_y2000_s050_d0: goodness_of_fit
+serum_replicates: {}

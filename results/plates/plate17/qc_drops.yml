@@ -1,0 +1,24 @@
+wells: {}
+barcodes:
+  AAAATCATTCGACTCT: min_neut_standard_frac_per_well
+  CCAGGAACAATATATC: min_neut_standard_frac_per_well
+  CCCACCCCTGCCTCCC: min_neut_standard_frac_per_well
+  GAGCAGTATCTGGTTA: min_neut_standard_frac_per_well
+  TTGAAAGCCACAACAC: min_neut_standard_frac_per_well
+barcode_wells:
+  AGCCCGAAGAGCCCCT D9: max_frac_infectivity_per_viral_barcode_well
+  CCAAATTTTAACTGTG E9: max_frac_infectivity_per_viral_barcode_well
+  GAATATAAATGGGCAT G9: max_frac_infectivity_per_viral_barcode_well
+  AGCCCGAAGAGCCCCT A10: max_frac_infectivity_per_viral_barcode_well
+  AGCCCGAAGAGCCCCT E10: max_frac_infectivity_per_viral_barcode_well
+  GAATATAAATGGGCAT B11: max_frac_infectivity_per_viral_barcode_well
+  AGCCCGAAGAGCCCCT B11: max_frac_infectivity_per_viral_barcode_well
+  TCCGAAAGACCAAAAC C11: max_frac_infectivity_per_viral_barcode_well
+  GAATATAAATGGGCAT G12: max_frac_infectivity_per_viral_barcode_well
+barcode_serum_replicates:
+  CCACATAGGCGTTTTT DRIVE_y1976_s014_d0: goodness_of_fit
+  GAATATAAATGGGCAT DRIVE_y1976_s014_d0: goodness_of_fit
+  GCATCCTTTTCCTGTT DRIVE_y1976_s014_d0: goodness_of_fit
+  AATCCGAAATTTATTC DRIVE_y1983_s015_d0: goodness_of_fit
+  CCCGACAAAGCCCTCG DRIVE_y1983_s015_d0: goodness_of_fit
+serum_replicates: {}

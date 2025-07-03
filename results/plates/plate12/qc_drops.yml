@@ -1,0 +1,20 @@
+wells:
+  H1: avg_barcode_counts_per_well
+barcodes:
+  CCAGGAACAATATATC: min_neut_standard_frac_per_well
+  CCCACCCCTGCCTCCC: min_neut_standard_frac_per_well
+  GAGCAGTATCTGGTTA: min_neut_standard_frac_per_well
+  TTGAAAGCCACAACAC: min_neut_standard_frac_per_well
+barcode_wells:
+  AAAATCATTCGACTCT E1: min_no_serum_count_per_viral_barcode_well
+  AAAATCATTCGACTCT F1: min_no_serum_count_per_viral_barcode_well
+  AAAATCATTCGACTCT G1: min_no_serum_count_per_viral_barcode_well
+  TCCGAAAGACCAAAAC G7: max_frac_infectivity_per_viral_barcode_well
+barcode_serum_replicates:
+  CCTTTCTCAAAACATA AUS24_s001_prevax: goodness_of_fit
+  GAATATAAATGGGCAT AUS24_s001_prevax: goodness_of_fit
+  AATCCGAAATTTATTC AUS24_s003_prevax: goodness_of_fit
+  AGCCCGAAGAGCCCCT AUS24_s003_prevax: goodness_of_fit
+  AGCCCGAAGAGCCCCT AUS24_s004_prevax: goodness_of_fit
+  GAATATAAATGGGCAT AUS24_s004_prevax: goodness_of_fit
+serum_replicates: {}
