@@ -9,7 +9,7 @@ docs: docs
 
 description: |
   # Sequencing-based neutralization assays of 2023-2024 Penn Vaccine samples versus H1N1 influenza libraries
-  Study by Loes, Tarabi, et al of samples from the Penn Vaccine cohort using sequencing-based neutralization assay developed in the Bloom lab.
+  Study by Loes, Tarabi, et al of samples from the Penn Vaccine cohort and the DRIVE Vaccine Cohort using sequencing-based neutralization assay developed in the Bloom lab.
 
   The numerical data and computer code are at [https://github.com/jbloomlab/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts](https://github.com/jbloomlab/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts)
 
@@ -293,41 +293,6 @@ plates:
       upstream2_mismatch: 1
 
   plate12:
-    group: CellVaccineCohort
-    date: 2024-09-20
-    viral_library: pdmH1N1Lib2023
-    neut_standard_set: loes2023
-    samples_csv: data/plates/plate16_Cell.csv
-    manual_drops:
-      barcodes: {}
-    qc_thresholds:
-      <<: *default_process_plate_qc_thresholds
-    curvefit_params:
-      <<: *default_process_plate_curvefit_params
-    curvefit_qc:
-      <<: *default_process_plate_curvefit_qc
-    illumina_barcode_parser_params:
-      upstream2: ATCGAT
-      upstream2_mismatch: 1
-
-  plate13:
-    group: CellVaccineCohort
-    date: 2024-09-25
-    viral_library: pdmH1N1Lib2023
-    neut_standard_set: loes2023
-    samples_csv: data/plates/plate17_Cell.csv
-    manual_drops: {}
-    qc_thresholds:
-      <<: *default_process_plate_qc_thresholds
-    curvefit_params:
-      <<: *default_process_plate_curvefit_params
-    curvefit_qc:
-      <<: *default_process_plate_curvefit_qc
-    illumina_barcode_parser_params:
-      upstream2: TGACGC
-      upstream2_mismatch: 1
-
-  plate14:
     group: DRIVE
     date: 2024-12-23
     viral_library: pdmH1N1Lib2023
@@ -344,7 +309,7 @@ plates:
       upstream2: GCTACA
       upstream2_mismatch: 1
 
-  plate15:
+  plate13:
     group: DRIVE
     date: 2024-12-23
     viral_library: pdmH1N1Lib2023
@@ -361,7 +326,7 @@ plates:
       upstream2: ATCGAT
       upstream2_mismatch: 1
 
-  plate16:
+  plate14:
     group: DRIVE
     date: 2024-12-23
     viral_library: pdmH1N1Lib2023
@@ -378,7 +343,7 @@ plates:
       upstream2: TGACGC
       upstream2_mismatch: 1
 
-  plate17:
+  plate15:
     group: DRIVE
     date: 2024-12-23
     viral_library: pdmH1N1Lib2023
@@ -395,7 +360,7 @@ plates:
       upstream2: CAGTTG
       upstream2_mismatch: 1
 
-  plate18:
+  plate16:
     group: DRIVE
     date: 2024-01-29
     viral_library: pdmH1N1Lib2023
@@ -412,7 +377,7 @@ plates:
       upstream2: GCTACA
       upstream2_mismatch: 1
 
-  plate19:
+  plate17:
     group: DRIVE
     date: 2024-01-29
     viral_library: pdmH1N1Lib2023
@@ -429,7 +394,7 @@ plates:
       upstream2: ATCGAT
       upstream2_mismatch: 1
 
-  plate20:
+  plate18:
     group: DRIVE
     date: 2024-01-29
     viral_library: pdmH1N1Lib2023
@@ -448,7 +413,7 @@ plates:
       upstream2: TGACGC
       upstream2_mismatch: 1
 
-  plate21:
+  plate19:
     group: DRIVE
     date: 2024-01-27
     viral_library: pdmH1N1Lib2023
@@ -465,7 +430,7 @@ plates:
       upstream2: CAGTTG
       upstream2_mismatch: 1
 
-  plate22:
+  plate20:
     group: DRIVE
     date: 2024-03-20
     viral_library: pdmH1N1Lib2023
@@ -482,7 +447,7 @@ plates:
       upstream2: TGACGC
       upstream2_mismatch: 1
 
-  plate23:
+  plate21:
     group: PennVaccineCohort
     date: 2024-03-20
     viral_library: pdmH1N1Lib2023
@@ -499,7 +464,7 @@ plates:
       upstream2: TGACGC
       upstream2_mismatch: 1
 
-  plate24:
+  plate22:
     group: DRIVE
     date: 2024-03-20
     viral_library: pdmH1N1Lib2023
