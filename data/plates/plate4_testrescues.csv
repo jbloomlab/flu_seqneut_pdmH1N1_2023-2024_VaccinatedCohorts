@@ -1,0 +1,5 @@
+well,serum,dilution_factor,replicate,fastq
+A3,MI23_1,1,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240423_VH00319_493_AAFMH75M5/Unaligned/Project_aloes/PlateB_17_S113_R1_001.fastq.gz
+B3,MI23_2,1,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240423_VH00319_493_AAFMH75M5/Unaligned/Project_aloes/PlateB_18_S114_R1_001.fastq.gz
+C3,MI23_3,1,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240423_VH00319_493_AAFMH75M5/Unaligned/Project_aloes/PlateB_19_S115_R1_001.fastq.gz
+D3,VI22_1,1,1,/fh/fast/bloom_j/SR/ngs/illumina/aloes/240423_VH00319_493_AAFMH75M5/Unaligned/Project_aloes/PlateB_20_S116_R1_001.fastq.gz
