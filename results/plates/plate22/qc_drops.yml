@@ -7,15 +7,22 @@ barcodes:
   GAGCAGTATCTGGTTA: min_neut_standard_frac_per_well
   TTGAAAGCCACAACAC: min_neut_standard_frac_per_well
 barcode_wells:
-  TAGTTGACTGTCGAGG D8: max_frac_infectivity_per_viral_barcode_well
-  TGGACACTTACAACAA D11: max_frac_infectivity_per_viral_barcode_well
-  GCATCCTTTTCCTGTT D11: max_frac_infectivity_per_viral_barcode_well
-  GCAGAACATAAAACTC B12: max_frac_infectivity_per_viral_barcode_well
-  AATTGTGAATGCCACA C12: max_frac_infectivity_per_viral_barcode_well
+  CCACATAGGCGTTTTT B7: max_frac_infectivity_per_viral_barcode_well
+  AGCAGTAAATAAAATC F8: max_frac_infectivity_per_viral_barcode_well
+  TCCGAAAGACCAAAAC G8: max_frac_infectivity_per_viral_barcode_well
+  CCAGCCACATAAAATT D9: max_frac_infectivity_per_viral_barcode_well
+  AGCCCGAAGAGCCCCT F9: max_frac_infectivity_per_viral_barcode_well
+  CCACATAGGCGTTTTT H9: max_frac_infectivity_per_viral_barcode_well
+  GCAGAACATAAAACTC D10: max_frac_infectivity_per_viral_barcode_well
+  TCCGAAAGACCAAAAC F10: max_frac_infectivity_per_viral_barcode_well
+  CCACATAGGCGTTTTT D12: max_frac_infectivity_per_viral_barcode_well
 barcode_serum_replicates:
-  CCCGACAAAGCCCTCG DRIVE_y1983_s034_d0: goodness_of_fit
-  AATGATAACTTAAAAA DRIVE_y1999_s013_d0: goodness_of_fit
-  AGCAGTAAATAAAATC DRIVE_y1999_s013_d0: goodness_of_fit
-  GAATATAAATGGGCAT DRIVE_y1999_s013_d0: goodness_of_fit
-  CCCGACAAAGCCCTCG DRIVE_y1999_s013_d30: goodness_of_fit
+  CCCGACAAAGCCCTCG DRIVE_y1982_s036_d30: goodness_of_fit
+  CCCGACAAAGCCCTCG DRIVE_y1992_s021_d0: goodness_of_fit
+  AGCCCGAAGAGCCCCT DRIVE_y1993_s040_d0: goodness_of_fit
+  CAGTCGCATTGAACCT DRIVE_y1993_s040_d0: goodness_of_fit
+  CCCGACAAAGCCCTCG DRIVE_y1993_s040_d0: goodness_of_fit
+  AGCCCGAAGAGCCCCT DRIVE_y1997_s045_d0: goodness_of_fit
+  CCCGACAAAGCCCTCG DRIVE_y1997_s045_d0: goodness_of_fit
+  GTCATATTCGATTACA DRIVE_y1997_s045_d30: goodness_of_fit
 serum_replicates: {}
