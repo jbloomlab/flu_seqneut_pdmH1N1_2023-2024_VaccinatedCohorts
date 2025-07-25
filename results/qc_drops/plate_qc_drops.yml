@@ -647,133 +647,6 @@ plate11:
     AGTACTTCGTACTCCT PENN23_y1996_s013_d28: goodness_of_fit
   serum_replicates: {}
 plate12:
-  wells:
-    H1: avg_barcode_counts_per_well
-  barcodes:
-    CCAGGAACAATATATC: min_neut_standard_frac_per_well
-    CCCACCCCTGCCTCCC: min_neut_standard_frac_per_well
-    GAGCAGTATCTGGTTA: min_neut_standard_frac_per_well
-    TTGAAAGCCACAACAC: min_neut_standard_frac_per_well
-  barcode_wells:
-    AAAATCATTCGACTCT E1: min_no_serum_count_per_viral_barcode_well
-    AAAATCATTCGACTCT F1: min_no_serum_count_per_viral_barcode_well
-    AAAATCATTCGACTCT G1: min_no_serum_count_per_viral_barcode_well
-    TCCGAAAGACCAAAAC G7: max_frac_infectivity_per_viral_barcode_well
-  barcode_serum_replicates:
-    CCTTTCTCAAAACATA AUS24_s001_prevax: goodness_of_fit
-    GAATATAAATGGGCAT AUS24_s001_prevax: goodness_of_fit
-    AATCCGAAATTTATTC AUS24_s003_prevax: goodness_of_fit
-    AGCCCGAAGAGCCCCT AUS24_s003_prevax: goodness_of_fit
-    AGCCCGAAGAGCCCCT AUS24_s004_prevax: goodness_of_fit
-    GAATATAAATGGGCAT AUS24_s004_prevax: goodness_of_fit
-  serum_replicates: {}
-plate13:
-  wells:
-    H10: avg_barcode_counts_per_well
-  barcodes:
-    AAAATCATTCGACTCT: min_neut_standard_frac_per_well
-    CCAGGAACAATATATC: min_neut_standard_frac_per_well
-    CCCACCCCTGCCTCCC: min_neut_standard_frac_per_well
-    GAGCAGTATCTGGTTA: min_neut_standard_frac_per_well
-    TTGAAAGCCACAACAC: min_neut_standard_frac_per_well
-  barcode_wells:
-    AATTGTGAATGCCACA A6: max_frac_infectivity_per_viral_barcode_well
-  barcode_serum_replicates:
-    ATACGTATTGATATCT AUS24_s007_prevax: goodness_of_fit
-    ATAGGCATGCTTACTG AUS24_s007_prevax: goodness_of_fit
-    GAATATAAATGGGCAT AUS24_s007_prevax: goodness_of_fit
-    GCAGAACATAAAACTC AUS24_s007_prevax: goodness_of_fit
-    TGGCCTGCTTCGGAAA AUS24_s007_prevax: goodness_of_fit
-    GAATATAAATGGGCAT AUS24_s008_postvax: goodness_of_fit
-    AAAATGCTGGGGTATA AUS24_s008_prevax: goodness_of_fit
-    AAACATATTGGCGTTT AUS24_s008_prevax: goodness_of_fit
-    AAGATGAATGTCTTAA AUS24_s008_prevax: goodness_of_fit
-    AAGATTACCAAATTAT AUS24_s008_prevax: goodness_of_fit
-    AAGCCCAATAATAAGG AUS24_s008_prevax: goodness_of_fit
-    AATAAAATGCATGGGT AUS24_s008_prevax: goodness_of_fit
-    AATCCGAAATTTATTC AUS24_s008_prevax: goodness_of_fit
-    AATTGTGAATGCCACA AUS24_s008_prevax: goodness_of_fit
-    ACAAATAGTTTATAGA AUS24_s008_prevax: goodness_of_fit
-    ACCCCTTCAGAAGTTA AUS24_s008_prevax: goodness_of_fit
-    ACGCCCCCACTTCATG AUS24_s008_prevax: goodness_of_fit
-    ACGGCAAGTGATGAAA AUS24_s008_prevax: goodness_of_fit
-    ACGTAAAAAGGATATC AUS24_s008_prevax: goodness_of_fit
-    ACTAATCGCAACTAGA AUS24_s008_prevax: goodness_of_fit
-    ACTACCGCTAATATGC AUS24_s008_prevax: goodness_of_fit
-    AGAACAATTATTGTTA AUS24_s008_prevax: goodness_of_fit
-    AGACGCTTCGGCCCAA AUS24_s008_prevax: goodness_of_fit
-    AGAGCTAAAAAGAGGA AUS24_s008_prevax: goodness_of_fit
-    AGGAAAGAAACTGGAG AUS24_s008_prevax: goodness_of_fit
-    AGTACTTCGTACTCCT AUS24_s008_prevax: goodness_of_fit
-    AGTCAGGAGTCATATA AUS24_s008_prevax: goodness_of_fit
-    ATAAGAGAGCATCTCT AUS24_s008_prevax: goodness_of_fit
-    ATACGTATTGATATCT AUS24_s008_prevax: goodness_of_fit
-    ATAGGCATGCTTACTG AUS24_s008_prevax: goodness_of_fit
-    ATAGGCTAGAAAGGAA AUS24_s008_prevax: goodness_of_fit
-    ATCTAATAATTATGGT AUS24_s008_prevax: goodness_of_fit
-    ATGGATATGCTATCAG AUS24_s008_prevax: goodness_of_fit
-    ATTACCTAAGTGAAAT AUS24_s008_prevax: goodness_of_fit
-    CAGATATGAGAGAGCA AUS24_s008_prevax: goodness_of_fit
-    CAGTCGCATTGAACCT AUS24_s008_prevax: goodness_of_fit
-    CATGCAATTCAGAGGG AUS24_s008_prevax: goodness_of_fit
-    CCAAATTTTAACTGTG AUS24_s008_prevax: goodness_of_fit
-    CCACATAGGCGTTTTT AUS24_s008_prevax: goodness_of_fit
-    CCCCAACCTATCGTAA AUS24_s008_prevax: goodness_of_fit
-    CCCGACAAAGCCCTCG AUS24_s008_prevax: goodness_of_fit
-    CCTGTTTTTAGACGAA AUS24_s008_prevax: goodness_of_fit
-    CGATGCACTCGTAAGT AUS24_s008_prevax: goodness_of_fit
-    CGCAGATATCATAGAA AUS24_s008_prevax: goodness_of_fit
-    CGCCTGTAAAAATTCG AUS24_s008_prevax: goodness_of_fit
-    CGCGAGCGTGAAATAA AUS24_s008_prevax: goodness_of_fit
-    CGTTAAGTTGAAAAAA AUS24_s008_prevax: goodness_of_fit
-    CTAGCAACATCTTCCT AUS24_s008_prevax: goodness_of_fit
-    CTCATATTCCTATGAC AUS24_s008_prevax: goodness_of_fit
-    CTCCTAATAAAAAACT AUS24_s008_prevax: goodness_of_fit
-    CTGAACTTGTCGATAT AUS24_s008_prevax: goodness_of_fit
-    GAAAATGATCCACATT AUS24_s008_prevax: goodness_of_fit
-    GAATATAAATGGGCAT AUS24_s008_prevax: goodness_of_fit
-    GACAATATACCCCCAT AUS24_s008_prevax: goodness_of_fit
-    GAGAGTACGGCACTGA AUS24_s008_prevax: goodness_of_fit
-    GATAATAGAAAGTGTA AUS24_s008_prevax: goodness_of_fit
-    GCAGAACATAAAACTC AUS24_s008_prevax: goodness_of_fit
-    GCATCCTTTTCCTGTT AUS24_s008_prevax: goodness_of_fit
-    GCCTTGCATTAGGAAC AUS24_s008_prevax: goodness_of_fit
-    GGATTACACGATACCG AUS24_s008_prevax: goodness_of_fit
-    GGCTTGAATGATATTG AUS24_s008_prevax: goodness_of_fit
-    GTAAAGACCTTCGGAG AUS24_s008_prevax: goodness_of_fit
-    GTAATACTGATGGGCA AUS24_s008_prevax: goodness_of_fit
-    GTAGAAATCATAGGCG AUS24_s008_prevax: goodness_of_fit
-    GTATCCCCACGAAAGT AUS24_s008_prevax: goodness_of_fit
-    GTCCACAACAGTTGAA AUS24_s008_prevax: goodness_of_fit
-    TAAATGGTACAGAGGT AUS24_s008_prevax: goodness_of_fit
-    TAACCGCTTCAATATA AUS24_s008_prevax: goodness_of_fit
-    TAACCGGGGAATCATT AUS24_s008_prevax: goodness_of_fit
-    TAACGGTATTCCCCAG AUS24_s008_prevax: goodness_of_fit
-    TAGGACTACAGAGAAC AUS24_s008_prevax: goodness_of_fit
-    TATGACATTAGAAACA AUS24_s008_prevax: goodness_of_fit
-    TATGGCCTATAGGTTC AUS24_s008_prevax: goodness_of_fit
-    TCATAATAGGATGTTT AUS24_s008_prevax: goodness_of_fit
-    TCATTGTCAATATTGA AUS24_s008_prevax: goodness_of_fit
-    TCCTCTATTTTCTTCT AUS24_s008_prevax: goodness_of_fit
-    TCGACGCTTCATGGAA AUS24_s008_prevax: goodness_of_fit
-    TGAATGATTCTCCTTT AUS24_s008_prevax: goodness_of_fit
-    TGAGTACTGTATACCA AUS24_s008_prevax: goodness_of_fit
-    TGGACACTTACAACAA AUS24_s008_prevax: goodness_of_fit
-    TGGGAAATCATTGGTA AUS24_s008_prevax: goodness_of_fit
-    TGTTTTACATTAGATG AUS24_s008_prevax: goodness_of_fit
-    TTCTATAGTACTTCTA AUS24_s008_prevax: goodness_of_fit
-    AATCCGAAATTTATTC AUS24_s009_prevax: goodness_of_fit
-    ACGCCCCCACTTCATG AUS24_s009_prevax: goodness_of_fit
-    ACGCCCCCACTTCATG AUS24_s010_postvax: goodness_of_fit
-    AGCCCGAAGAGCCCCT AUS24_s010_postvax: goodness_of_fit
-    ACGCCCCCACTTCATG AUS24_s010_prevax: goodness_of_fit
-    AGCCCGAAGAGCCCCT AUS24_s010_prevax: goodness_of_fit
-    AGTACTTCGTACTCCT AUS24_s010_prevax: goodness_of_fit
-    ATACGTATTGATATCT AUS24_s010_prevax: goodness_of_fit
-    GAATATAAATGGGCAT AUS24_s010_prevax: goodness_of_fit
-    TGGCCTGCTTCGGAAA AUS24_s010_prevax: goodness_of_fit
-  serum_replicates: {}
-plate14:
   wells: {}
   barcodes:
     AAAATCATTCGACTCT: min_neut_standard_frac_per_well
@@ -833,7 +706,7 @@ plate14:
     GCATCCTTTTCCTGTT DRIVE_y1977_s012_d30: goodness_of_fit
     AGCAGTAAATAAAATC DRIVE_y1991_s008_d30: goodness_of_fit
   serum_replicates: {}
-plate15:
+plate13:
   wells: {}
   barcodes:
     AAAATCATTCGACTCT: min_neut_standard_frac_per_well
@@ -880,7 +753,7 @@ plate15:
     GAGAGTACGGCACTGA DRIVE_y1999_s013_d0: goodness_of_fit
     TATGACATTAGAAACA DRIVE_y1999_s013_d0: goodness_of_fit
   serum_replicates: {}
-plate16:
+plate14:
   wells: {}
   barcodes:
     AAAATCATTCGACTCT: min_neut_standard_frac_per_well
@@ -896,7 +769,7 @@ plate16:
   barcode_serum_replicates:
     AGCCCGAAGAGCCCCT DRIVE_y1987_s003_d0: goodness_of_fit
   serum_replicates: {}
-plate17:
+plate15:
   wells: {}
   barcodes:
     AAAATCATTCGACTCT: min_neut_standard_frac_per_well
@@ -921,7 +794,7 @@ plate17:
     AATCCGAAATTTATTC DRIVE_y1983_s015_d0: goodness_of_fit
     CCCGACAAAGCCCTCG DRIVE_y1983_s015_d0: goodness_of_fit
   serum_replicates: {}
-plate18:
+plate16:
   wells:
     A7: avg_barcode_counts_per_well
   barcodes:
@@ -941,7 +814,7 @@ plate18:
     AATCCGAAATTTATTC DRIVE_y1997_s009_d0: goodness_of_fit
     AGCCCGAAGAGCCCCT DRIVE_y1997_s009_d0: goodness_of_fit
   serum_replicates: {}
-plate19:
+plate17:
   wells:
     A7: avg_barcode_counts_per_well
   barcodes:
@@ -970,7 +843,7 @@ plate19:
     AATCCGAAATTTATTC DRIVE_y1981_s010_d0: goodness_of_fit
     AATCCGAAATTTATTC DRIVE_y1981_s010_d30: goodness_of_fit
   serum_replicates: {}
-plate20:
+plate18:
   wells:
     A7: avg_barcode_counts_per_well
   barcodes:
@@ -995,7 +868,7 @@ plate20:
     GAATATAAATGGGCAT DRIVE_y1994_s016_d0: goodness_of_fit
     CCCCAACCTATCGTAA DRIVE_y1994_s048_d0: goodness_of_fit
   serum_replicates: {}
-plate21:
+plate19:
   wells:
     A7: avg_barcode_counts_per_well
   barcodes:
@@ -1027,7 +900,7 @@ plate21:
     CAAGGAAACCGGTTGA DRIVE_y2000_s017_d0: goodness_of_fit
     CCCGACAAAGCCCTCG DRIVE_y2000_s017_d0: goodness_of_fit
   serum_replicates: {}
-plate22:
+plate20:
   wells: {}
   barcodes:
     AAAATCATTCGACTCT: min_neut_standard_frac_per_well
@@ -1049,7 +922,7 @@ plate22:
     GAATATAAATGGGCAT DRIVE_y1999_s013_d0: goodness_of_fit
     CCCGACAAAGCCCTCG DRIVE_y1999_s013_d30: goodness_of_fit
   serum_replicates: {}
-plate23:
+plate21:
   wells: {}
   barcodes:
     AAAATCATTCGACTCT: min_neut_standard_frac_per_well
@@ -1078,7 +951,7 @@ plate23:
     CCACATAGGCGTTTTT PENN23_y1985_s015_d28: goodness_of_fit
     GAATATAAATGGGCAT PENN23_y1985_s015_d28: goodness_of_fit
   serum_replicates: {}
-plate24:
+plate22:
   wells: {}
   barcodes:
     AAAATCATTCGACTCT: min_neut_standard_frac_per_well

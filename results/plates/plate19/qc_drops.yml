@@ -2,27 +2,30 @@ wells:
   A7: avg_barcode_counts_per_well
 barcodes:
   AAAATCATTCGACTCT: min_neut_standard_frac_per_well
+  AATCCGAAATTTATTC: min_neut_standard_frac_per_well
   CCAGGAACAATATATC: min_neut_standard_frac_per_well
   CCCACCCCTGCCTCCC: min_neut_standard_frac_per_well
   GAGCAGTATCTGGTTA: min_neut_standard_frac_per_well
   TTGAAAGCCACAACAC: min_neut_standard_frac_per_well
 barcode_wells:
-  CCCGACAAAGCCCTCG B1: min_no_serum_count_per_viral_barcode_well
-  AATCCGAAATTTATTC B1: min_no_serum_count_per_viral_barcode_well
   AGCAGTAAATAAAATC B1: min_no_serum_count_per_viral_barcode_well
-  AATCCGAAATTTATTC E1: min_no_serum_count_per_viral_barcode_well
-  AATCCGAAATTTATTC A10: max_frac_infectivity_per_viral_barcode_well
-  AATCCGAAATTTATTC B10: max_frac_infectivity_per_viral_barcode_well
-  CCACATAGGCGTTTTT H10: max_frac_infectivity_per_viral_barcode_well
-  AATCCGAAATTTATTC F11: max_frac_infectivity_per_viral_barcode_well
-  TCATTGTCAATATTGA C12: max_frac_infectivity_per_viral_barcode_well
-  GCATCCTTTTCCTGTT C12: max_frac_infectivity_per_viral_barcode_well
+  AGCAGTAAATAAAATC D1: min_no_serum_count_per_viral_barcode_well
+  GACACAGAACCCATGC F5: max_frac_infectivity_per_viral_barcode_well
+  CGTTAAGTTGAAAAAA F7: max_frac_infectivity_per_viral_barcode_well
+  GGATTGTAATAAATCA H7: max_frac_infectivity_per_viral_barcode_well
+  TCCGAAAGACCAAAAC F8: max_frac_infectivity_per_viral_barcode_well
+  CCCGACAAAGCCCTCG F8: max_frac_infectivity_per_viral_barcode_well
+  CCCGACAAAGCCCTCG D10: max_frac_infectivity_per_viral_barcode_well
 barcode_serum_replicates:
-  CCCGACAAAGCCCTCG DRIVE_y1979_s023_d0: goodness_of_fit
-  AATCCGAAATTTATTC DRIVE_y1979_s027_d0: goodness_of_fit
-  AGCCCGAAGAGCCCCT DRIVE_y1979_s027_d0: goodness_of_fit
-  CCCGACAAAGCCCTCG DRIVE_y1979_s027_d0: goodness_of_fit
-  TGGACACTTACAACAA DRIVE_y1979_s027_d0: goodness_of_fit
-  AATCCGAAATTTATTC DRIVE_y1981_s010_d0: goodness_of_fit
-  AATCCGAAATTTATTC DRIVE_y1981_s010_d30: goodness_of_fit
+  AATGATAACTTAAAAA DRIVE_y1980_s046_d0: goodness_of_fit
+  CAAGGAAACCGGTTGA DRIVE_y1980_s046_d0: goodness_of_fit
+  TGGACACTTACAACAA DRIVE_y1980_s046_d30: goodness_of_fit
+  CCCGACAAAGCCCTCG DRIVE_y1982_s033_d0: goodness_of_fit
+  GAATATAAATGGGCAT DRIVE_y1982_s033_d0: goodness_of_fit
+  CCACATAGGCGTTTTT DRIVE_y1984_s044_d0: goodness_of_fit
+  CCCGACAAAGCCCTCG DRIVE_y1984_s044_d0: goodness_of_fit
+  GAATATAAATGGGCAT DRIVE_y1984_s044_d0: goodness_of_fit
+  TCATTGTCAATATTGA DRIVE_y1984_s044_d0: goodness_of_fit
+  CAAGGAAACCGGTTGA DRIVE_y2000_s017_d0: goodness_of_fit
+  CCCGACAAAGCCCTCG DRIVE_y2000_s017_d0: goodness_of_fit
 serum_replicates: {}
