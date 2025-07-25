@@ -1,0 +1,2 @@
+# notebooks README
+This directory contains non-pipeline analysis for processing titer data and plotting titers by metadata parameters. This includes the code for generating all plots seen in the paper and all tests for significance.
