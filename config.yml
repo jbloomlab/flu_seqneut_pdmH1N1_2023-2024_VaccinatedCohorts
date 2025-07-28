@@ -501,6 +501,33 @@ miscellaneous_plates:
     neut_standard_set: loes2023
     samples_csv: data/plates/plate3_MOItest.csv
 
+  plate4_MOItests:
+    date: 2024-04-23
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate4_MOItests_6and8hr.csv
+    illumina_barcode_parser_params:
+      upstream2: ATCGAT
+      upstream2_mismatch: 1
+
+  plate4_testrescues:
+    date: 2024-04-23
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate4_testrescues.csv
+    illumina_barcode_parser_params:
+      upstream2: GCTACA
+      upstream2_mismatch: 1
+
+  plate4_5J8_16hr:
+    date: 2024-04-23
+    viral_library: pdmH1N1Lib2023
+    neut_standard_set: loes2023
+    samples_csv: data/plates/plate4_5J8_16hr.csv
+    illumina_barcode_parser_params:
+      upstream2: GCTACA
+      upstream2_mismatch: 1
+
 default_serum_titer_as: midpoint
 
 default_serum_qc_thresholds: &default_serum_qc_thresholds
