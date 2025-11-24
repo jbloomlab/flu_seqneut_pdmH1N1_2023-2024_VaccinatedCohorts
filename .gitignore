@@ -3,9 +3,6 @@
 _*
 *.out
 
-docs/*
-!docs/*.html
-
 results/*
 
 !results/barcode_counts
