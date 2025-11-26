@@ -5,7 +5,7 @@
 
 seqneut-pipeline: seqneut-pipeline
 
-docs: docs
+curve_display_method: svg
 
 description: |
   # Sequencing-based neutralization assays of 2023-2024 Penn Vaccine samples versus H1N1 influenza libraries
