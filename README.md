@@ -22,7 +22,7 @@ The input data are in [./data/](data), and include:
 * [./data/viral_libraries/](./data/viral_libraries/): directory containing the CSV file that match 16-nucleotide barcodes to the library strain names and the file that lists the order in which to plot viral strains.
 
 ## Library background and design
-Information on the library design is available in [./non-pipeline_analyses/library_design/](.non-pipeline_analyses/library_design).
+Information on the library design is available in [./non-pipeline_analyses/library_design/](non-pipeline_analyses/library_design).
 
 ## Running the pipeline
 This repository contains an analysis of the data using [seqneut-pipeline](https://github.com/jbloomlab/seqneut-pipeline).
