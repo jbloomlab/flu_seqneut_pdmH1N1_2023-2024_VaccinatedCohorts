@@ -19,7 +19,7 @@ viral_libraries:
 neut_standard_sets:
   loes2023: data/neut_standard_sets/loes2023_neut_standards.csv
 
-viral_strain_plot_order: data/H1N1library_2023-2024_allStrains.csv
+viral_strain_plot_order: data/viral_libraries/H1N1library_2023-2024_allStrains.csv
 
 illumina_barcode_parser_params:
   upstream: CCTACAATGTCGGATTTGTATTTAATAG
@@ -487,25 +487,25 @@ miscellaneous_plates:
     date: 2024-01-19
     viral_library: pdmH1N1Lib2023
     neut_standard_set: loes2023
-    samples_csv: data/plates/plate1_initialpool.csv
+    samples_csv: data/miscellaneous_plates/plate1_initialpool.csv
 
   plate2_repool:
     date: 2024-01-26
     viral_library: pdmH1N1Lib2023
     neut_standard_set: loes2023
-    samples_csv: data/plates/plate2_repoolrepassage.csv
+    samples_csv: data/miscellaneous_plates/plate2_repoolrepassage.csv
 
   plate3_MOITest:
     date: 2024-02-29
     viral_library: pdmH1N1Lib2023
     neut_standard_set: loes2023
-    samples_csv: data/plates/plate3_MOItest.csv
+    samples_csv: data/miscellaneous_plates/plate3_MOItest.csv
 
   plate4_MOItests:
     date: 2024-04-23
     viral_library: pdmH1N1Lib2023
     neut_standard_set: loes2023
-    samples_csv: data/plates/plate4_MOItests_6and8hr.csv
+    samples_csv: data/miscellaneous_plates/plate4_MOItests_6and8hr.csv
     illumina_barcode_parser_params:
       upstream2: ATCGAT
       upstream2_mismatch: 1
@@ -514,7 +514,7 @@ miscellaneous_plates:
     date: 2024-04-23
     viral_library: pdmH1N1Lib2023
     neut_standard_set: loes2023
-    samples_csv: data/plates/plate4_testrescues.csv
+    samples_csv: data/miscellaneous_plates/plate4_testrescues.csv
     illumina_barcode_parser_params:
       upstream2: GCTACA
       upstream2_mismatch: 1
@@ -523,7 +523,7 @@ miscellaneous_plates:
     date: 2024-04-23
     viral_library: pdmH1N1Lib2023
     neut_standard_set: loes2023
-    samples_csv: data/plates/plate4_5J8_16hr.csv
+    samples_csv: data/miscellaneous_plates/plate4_5J8_16hr.csv
     illumina_barcode_parser_params:
       upstream2: GCTACA
       upstream2_mismatch: 1
