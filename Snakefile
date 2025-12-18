@@ -7,7 +7,7 @@ include: "seqneut-pipeline/seqneut-pipeline.smk"
 rule all:
     input:
         seqneut_pipeline_outputs,  # outputs from pipeline
-        "results/aggregated_titers/titerschart_BothCohorts.html",
+        "results/custom_plots/titerschart_BothCohorts.html",
 
 rule make_summary_plots:
     """Plot NT50s for all samples."""
