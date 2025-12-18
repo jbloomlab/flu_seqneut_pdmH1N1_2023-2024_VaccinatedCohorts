@@ -1,0 +1,23 @@
+name: seqneut-pipeline-plotting
+
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+  - altair
+  - black
+  - black-jupyter
+  - git-lfs
+  - jupyterlab
+  - nbdime
+  - pandas
+  - pyarrow
+  - pip
+  - pyparsing
+  - pytest
+  - python=3.12
+  - seaborn
+  - snakemake
+  - pip:
+    - neutcurve
