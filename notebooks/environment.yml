@@ -12,6 +12,7 @@ dependencies:
   - jupyterlab
   - nbdime
   - pandas
+  - papermill=2.5
   - pyarrow
   - pip
   - pyparsing
