@@ -18,6 +18,13 @@ rule make_summary_plots:
         metadata_csv = "data/metadata/251209_SampleMetadata_bothcohorts.csv",
     output:
         titers_html="results/custom_plots/titerschart_BothCohorts.html",
+        Fig2 = "results/custom_plots/Figure2.html",
+        Fig3B = "results/custom_plots/Figure3B.html",
+        Fig3C = "results/custom_plots/Figure3C.html",
+        Fig4A ="results/custom_plots/Figure4A.html",
+        Fig4B ="results/custom_plots/Figure4B.html",
+        Fig5_pre = "results/custom_plots/Figure5_pre.html",
+        Fig5_post = "results/custom_plots/Figure5_post.html",
     log:
         notebook="results/custom_plots/plot_cohorttiters.ipynb",
     conda:
