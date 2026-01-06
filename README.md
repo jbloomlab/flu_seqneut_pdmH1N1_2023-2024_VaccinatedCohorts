@@ -41,3 +41,10 @@ The aggregated titers for all relevant sera are in [./results/aggregated_titers/
 
 ## Interactive plots of neutralization curves and titers
 See the HTML documentation rendered at [`https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts/`](https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts/) for interactive plots summarizing the results (at the bottom of the page), as well as notebooks showing all neutralization curves and details on per-plate and per-serum quality control.
+
+## Rendering the documentation on GitHub Pages
+To render the HTML documentation of the pipeline generated in ./results/docs to GitHub Pages, run:
+
+    ./seqneut-pipeline/publish_docs_gh-pages.sh
+
+And then set the GitHub repository to serve the docs from the gh-pages branch and the /root directory. The docs will then be available at [`https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts/`](https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_Vaccinate)
