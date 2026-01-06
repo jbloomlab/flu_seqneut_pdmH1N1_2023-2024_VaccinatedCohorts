@@ -47,4 +47,4 @@ To render the HTML documentation of the pipeline generated in ./results/docs to 
 
     ./seqneut-pipeline/publish_docs_gh-pages.sh
 
-And then set the GitHub repository to serve the docs from the gh-pages branch and the /root directory. The docs will then be available at [`https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts/`](https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_Vaccinate)
+And then set the GitHub repository to serve the docs from the gh-pages branch and the /root directory. The docs will then be available at [`https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts/`](https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts/)
