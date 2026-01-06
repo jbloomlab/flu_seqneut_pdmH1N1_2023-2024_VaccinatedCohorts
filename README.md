@@ -6,9 +6,9 @@ Experimental data included and analyzed in this repository was generated Andrea 
 For in depth description of sequencing-based neutralization assay which was used to collect the data shown here, please see manuscript by [Loes et al (2024)](https://journals.asm.org/doi/10.1128/jvi.00689-24).
 
 ## Quick summary
-* This study uses a panel of 58 circulating H1N1 viruses that was selected in the late fall of 2023, including frequently observed and recently observed haplotypes from the Nextstrain tree build from 11-22-2023.The list of strains included in the library are listed in CSV format in [./data/viral_libraries/H1N1library_2023-2024_barcode_to_strain.csv](./data/viral_libraries/H1N1library_2023-2024_barcode_to_strain.csv). This file contains barcodes This file describes each barcoded variant (note most strains have multiple barcodes) giving:
+* This study uses a panel of 58 circulating H1N1 viruses that was selected in the late fall of 2023, including frequently observed and recently observed haplotypes from the Nextstrain tree build from 11-22-2023. The list of strains included in the library is available in CSV format in [./data/viral_libraries/H1N1library_2023-2024_barcode_to_strain.csv](./data/viral_libraries/H1N1library_2023-2024_barcode_to_strain.csv). This file describes each barcoded variant (note most strains have multiple barcodes) giving:
 strain: strain name
-strain_type: either a strain representative of this circulating in 2025 designed for this study, or a past vaccine strain
+strain_type: either a strain representative of this circulating in 2023 designed for this study, or a past vaccine strain
 barcode: nucleotide barcode
 protein_sequence_HA_ectodomain: protein sequence for the HA ectodomain only
 accession: Genbank accession
