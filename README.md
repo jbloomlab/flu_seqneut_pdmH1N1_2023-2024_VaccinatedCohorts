@@ -7,11 +7,11 @@ For in depth description of sequencing-based neutralization assay which was used
 
 ## Quick summary
 * This study uses a panel of 58 circulating H1N1 viruses that was selected in the late fall of 2023, including frequently observed and recently observed haplotypes from the Nextstrain tree build from 11-22-2023. The list of strains included in the library is available in CSV format in [./data/viral_libraries/H1N1library_2023-2024_barcode_to_strain.csv](./data/viral_libraries/H1N1library_2023-2024_barcode_to_strain.csv). This file describes each barcoded variant (note most strains have multiple barcodes) giving:
-* strain: strain name
-* strain_type: either a strain representative of this circulating in 2023 designed for this study, or a past vaccine strain
-* barcode: nucleotide barcode
-* protein_sequence_HA_ectodomain: protein sequence for the HA ectodomain only
-* accession: Genbank accession
+    * strain: strain name
+    * strain_type: either a strain representative of this circulating in 2023 designed for this study, or a past vaccine strain
+    * barcode: nucleotide barcode
+    * protein_sequence_HA_ectodomain: protein sequence for the HA ectodomain only
+    * accession: Genbank accession
 
 * This library was tested against sera from the Penn Vaccine Cohort, conducted at the University of Pennsylvania and the Dynamics of the Immune Responses to Repeat Influenza Vaccination Exposures (DRIVE) Study, conducted in Hong Kong:
     * Samples collected day 0 and day 28-30 post vaccination with the egg-based 2023-2024 seasonal influenza virus vaccine or the recombinant cell-based 2023-2024 vaccine strain. The H1N1 egg-vaccine component that season was A/Victoria/4897/2022 and the cell-vaccine component was A/Wisconsin/67/2022.
