@@ -15,7 +15,7 @@ rule make_summary_plots:
         DRIVE_input_titers = "results/aggregated_titers/titers_DRIVE.csv",
         PENN_input_titers = "results/aggregated_titers/titers_PennVaccineCohort.csv",
         viral_strain_plot_order = "data/viral_libraries/H1N1library_2023-2024_allStrains.csv",
-        metadata_csv = "data/metadata/251209_SampleMetadata_bothcohorts.csv",
+        metadata_csv = "data/sera_metadata/251209_SampleMetadata_bothcohorts.csv",
     output:
         titers_html="results/custom_plots/titerschart_BothCohorts.html",
         Fig2 = "results/custom_plots/Figure2.html",
