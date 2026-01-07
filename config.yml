@@ -14,12 +14,12 @@ description: |
   The numerical data and computer code are at [https://github.com/jbloomlab/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts](https://github.com/jbloomlab/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts)
 
 viral_libraries:
-  pdmH1N1Lib2023: data/viral_libraries/H1N1_2023_library.csv
+  pdmH1N1Lib2023: data/viral_libraries/H1N1library_2023-2024_barcode_to_strain.csv
 
 neut_standard_sets:
   loes2023: data/neut_standard_sets/loes2023_neut_standards.csv
 
-viral_strain_plot_order: data/viral_libraries/H1N1library_2023-2024_allStrains.csv
+viral_strain_plot_order: data/viral_libraries/H1N1library_2023-2024_plot_order.csv
 
 illumina_barcode_parser_params:
   upstream: CCTACAATGTCGGATTTGTATTTAATAG

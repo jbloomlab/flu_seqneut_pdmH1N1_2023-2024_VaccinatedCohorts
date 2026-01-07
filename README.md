@@ -6,11 +6,14 @@ Experimental data included and analyzed in this repository was generated Andrea 
 For in depth description of sequencing-based neutralization assay which was used to collect the data shown here, please see manuscript by [Loes et al (2024)](https://journals.asm.org/doi/10.1128/jvi.00689-24).
 
 ## Quick summary
-* The list of strains included in the library are listed in CSV format in [./data/viral_libraries/H1N1library_2023-2024_allStrains.csv](./data/viral_libraries/H1N1library_2023-2024_allStrains.csv), and the process of library design is described in [non-pipeline_analyses/library_design/README.md](non-pipeline_analyses/library_design/README.md). This panel of 59 circulating H1N1 viruses was selected in the late fall of 2023, including frequently observed and recently observed haplotypes from the Nextstrain tree build from 11-22-2023.
-    * The full length protein sequences of the HAs from 59 recent strains and 7 vaccine strains as they are represented in the library are available in: [./non-pipeline_analyses/library_design/sequences/2023-2024_H1_library_full-length_proteins_withWSNflanks.fasta](non-pipeline_analyses/library_design/sequences/2023-2024_H1_library_full-length_proteins_withWSNflanks.fasta). These are the complete HA protein sequences containing the first 20 and last 46 amino acids from A/WSN/1933 (H1N1) and the ectodomain from the recent HA strain of interest.
-    * The protein sequences for the ectodomains of the HAs of the recent strains and vaccine strains included in the library are available in: [./non-pipeline_analyses/library_design/sequences/2023-2024_H1_library_protein_HA_ectodomain.fasta](non-pipeline_analyses/library_design/sequences/2023-2024_H1_library_protein_HA_ectodomain.fasta). This file shows the region of the protein sequence for each HA ectodomain which matches the HA protein sequence from the originating strain, as trimmed to be incorporated into the barcoded HA segment. The starting amino acid is HA1 position 4.
-    * The HA1 sequences are available in [./non-pipeline_analyses/library_design/sequences/2023-2024_H1_library_protein_HA1.fasta](non-pipeline_analyses/library_design/sequences/2023-2024_H1_library_protein_HA1.fasta). Note that HA1 position 3 is fixed to the WSN amino-acid at this site (isoleucine) rather than the leucine observed in recent circulating sequences in the final library. This was done to maintain the entire WSN packaging signal. Therefore, in this file the HA1s start at position 4.
-* This library was then assayed against sera from the Penn Vaccine Cohort, conducted at the University of Pennsylvania and the Dynamics of the Immune Responses to Repeat Influenza Vaccination Exposures (DRIVE) Study, conducted in Hong Kong:
+* This study uses a panel of 58 circulating H1N1 viruses that was selected in the late fall of 2023, including frequently observed and recently observed haplotypes from the Nextstrain tree build from 11-22-2023. The list of strains included in the library is available in CSV format in [./data/viral_libraries/H1N1library_2023-2024_barcode_to_strain.csv](./data/viral_libraries/H1N1library_2023-2024_barcode_to_strain.csv). This file describes each barcoded variant (note most strains have multiple barcodes) giving:
+    * _strain_: strain name
+    * _strain_type_: either a strain representative of this circulating in 2023 designed for this study, or a past vaccine strain
+    * _barcode_: nucleotide barcode
+    * _protein_sequence_HA_ectodomain_: protein sequence for the HA ectodomain only
+    * _accession_w_aa_muts_added_: Genbank accession with amino acid mutations added to genbank record listed
+
+* This library was tested against sera from the Penn Vaccine Cohort, conducted at the University of Pennsylvania and the Dynamics of the Immune Responses to Repeat Influenza Vaccination Exposures (DRIVE) Study, conducted in Hong Kong:
     * Samples collected day 0 and day 28-30 post vaccination with the egg-based 2023-2024 seasonal influenza virus vaccine or the recombinant cell-based 2023-2024 vaccine strain. The H1N1 egg-vaccine component that season was A/Victoria/4897/2022 and the cell-vaccine component was A/Wisconsin/67/2022.
     * Serum neutralizing titers measured from the University of Pennsylvania cohort are placed in [./results/aggregated_titers/titers_PennVaccineCohort.csv](results/aggregated_titers/titers_PennVaccineCohort.csv).
     * Serum neutralizing titers measured from the DRIVE Repeated Vaccination cohort are placed in [./results/aggregated_titers/titers_DRIVE.csv](results/aggregated_titers/titers_DRIVE.csv).
@@ -41,3 +44,10 @@ The aggregated titers for all relevant sera are in [./results/aggregated_titers/
 
 ## Interactive plots of neutralization curves and titers
 See the HTML documentation rendered at [`https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts/`](https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts/) for interactive plots summarizing the results (at the bottom of the page), as well as notebooks showing all neutralization curves and details on per-plate and per-serum quality control.
+
+## Rendering the documentation on GitHub Pages
+To render the HTML documentation of the pipeline generated in ./results/docs to GitHub Pages, run:
+
+    ./seqneut-pipeline/publish_docs_gh-pages.sh
+
+And then set the GitHub repository to serve the docs from the gh-pages branch and the /root directory. The docs will then be available at [`https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts/`](https://jbloomlab.github.io/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts/)
