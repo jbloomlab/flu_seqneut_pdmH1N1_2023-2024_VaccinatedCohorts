@@ -11,7 +11,7 @@ For in depth description of sequencing-based neutralization assay which was used
     * _strain_type_: either a strain representative of this circulating in 2023 designed for this study, or a past vaccine strain
     * _barcode_: nucleotide barcode
     * _protein_sequence_HA_ectodomain_: protein sequence for the HA ectodomain only
-    * _accession_: Genbank accession
+    * _accession_w_aa_muts_added_: Genbank accession with amino acid mutations added to genbank record listed
 
 * This library was tested against sera from the Penn Vaccine Cohort, conducted at the University of Pennsylvania and the Dynamics of the Immune Responses to Repeat Influenza Vaccination Exposures (DRIVE) Study, conducted in Hong Kong:
     * Samples collected day 0 and day 28-30 post vaccination with the egg-based 2023-2024 seasonal influenza virus vaccine or the recombinant cell-based 2023-2024 vaccine strain. The H1N1 egg-vaccine component that season was A/Victoria/4897/2022 and the cell-vaccine component was A/Wisconsin/67/2022.
