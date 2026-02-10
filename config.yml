@@ -527,6 +527,9 @@ miscellaneous_plates:
     illumina_barcode_parser_params:
       upstream2: GCTACA
       upstream2_mismatch: 1
+    manual_drops:
+      wells:
+        - F1
 
 default_serum_titer_as: midpoint
 
