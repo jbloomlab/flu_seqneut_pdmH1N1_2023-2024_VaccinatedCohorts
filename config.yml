@@ -13,7 +13,7 @@ description: |
 
   The numerical data and computer code are at [https://github.com/jbloomlab/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts](https://github.com/jbloomlab/flu_seqneut_pdmH1N1_2023-2024_VaccinatedCohorts)
 
-  The data here are described in Loes et al, 2026 (https://www.biorxiv.org/content/10.64898/2026.02.23.707528v1).
+  The data here are described in [Loes et al, 2026](https://www.biorxiv.org/content/10.64898/2026.02.23.707528v1).
 
 viral_libraries:
   pdmH1N1Lib2023: data/viral_libraries/H1N1library_2023-2024_barcode_to_strain.csv
