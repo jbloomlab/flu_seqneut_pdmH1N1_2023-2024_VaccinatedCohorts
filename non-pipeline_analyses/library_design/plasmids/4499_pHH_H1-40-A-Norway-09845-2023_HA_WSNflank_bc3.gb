@@ -1,0 +1,46 @@
+LOCUS       4499_pHH_H1-40-A-Norway-09845-2023_HA_WSNflank_bc3 11 bp    ds-DNA  circular UNK 14-DEC-2023
+DEFINITION  This pHH plasmid contains the HA sequence for a H1N1 from a 2023
+            strain. Signal peptide and 3'NCR from WSN, ectodomain from H1N1 HA
+            H1_40_A/Norway/09845/2023, and last 46 aa recoded WSN transmembrane
+            and c-terminal domain. With duplicated 5' packaging signals from WSN
+            with a single stop codon in the duplicated packaging signal, with
+            the barcode NNNNNNNNNNNNNNNN This plasmid was cloned and sequence
+            confirmed by Rosario Tarabi..
+ACCESSION   .
+VERSION     .
+KEYWORDS    .
+SOURCE      synthetic DNA construct
+  ORGANISM  synthetic DNA construct
+            .
+FEATURES             Location/Qualifiers
+     terminator      complement(1576..1741)
+                     /label="mouse PolI terminator"
+     misc_feature    complement(1742..1753)
+                     /label="U12"
+     misc_feature    complement(1742..1773)
+                     /label="3' NCR"
+     misc_feature    1774..1830
+                     /label="WSN first 19 aa"
+     misc_feature    1834..3333
+                     /label="HA gene from H1_40_A/Norway/09845/2023"
+     misc_feature    2311..2455
+                     /label="constant H1 WSN endodomain"
+     misc_feature    1774..3477
+                     /label="HA coding sequence"
+     misc_feature    3334..3477
+                     /label="WSN mutated packaging signal"
+     misc_feature    3478..3493
+                     /label="barcode"
+     misc_feature    3494..3526
+                     /label="IlluminaBarcodeRegion"
+     misc_feature    3536..3640
+                     /label="packaging signal"
+     misc_feature    complement(3641..3685)
+                     /label="5' NCR"
+     misc_feature    complement(3674..3685)
+                     /label="U13"
+     misc_feature    complement(3686..4088)
+                     /label="Human PolI promoter"
+ORIGIN
+        1 notreadyye t
+//
