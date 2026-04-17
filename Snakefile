@@ -28,6 +28,6 @@ rule make_summary_plots:
     log:
         notebook="results/custom_plots/plot_cohorttiters.ipynb",
     conda:
-        "notebooks/environment.yml"
+        "envs/plot_cohorttiters.yml"
     notebook:
         "notebooks/plot_cohorttiters.ipynb"

@@ -1,0 +1,17 @@
+name: seqneut-pipeline
+
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+  - altair=5.5
+  - jupyterlab
+  - pandas=2.3.3
+  - pip
+  - pyarrow
+  - python=3.13
+  - snakemake=9.19
+  - statsmodels
+  - pip:
+    - neutcurve==2.3.0
